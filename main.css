@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400&family=Playfair+Display:wght@500&family=Quicksand&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  /*
+    font-family: 'Playfair Display', serif;
+   font-family: 'Quicksand', sans-serif; 
+   font-family: 'IBM Plex Sans', sans-serif;*/
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #161616;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+nav li a {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+#img-screen {
+  background-image: url("/images/screen.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.role {
+  height: 95vh;
+}
+
+.title {
+  color: #fff;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.title h1 {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding: 280px;
+  font-size: 5em;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.title span {
+  color: #f7c9b6;
+}
+
+.about {
+  background-color: #161616;
+  height: 100vh;
+}
