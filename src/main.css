@@ -193,11 +193,6 @@ h2 {
   width: 0;
 }
 
-.works li:hover {
-  transition: all ease-in-out 0.5s;
-  transform: scale(1.15);
-}
-
 article {
   width: var(--card-size, 300px);
   aspect-ratio: 3 / 4;
