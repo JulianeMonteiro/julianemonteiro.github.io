@@ -34,8 +34,10 @@ header {
   font-family: "Quicksand", sans-serif;
 }
 
-.menu .checkbox,
-.menu i {
+input,
+#icon,
+.menu__list h4,
+.menu__list i {
   display: none;
 }
 
@@ -500,27 +502,34 @@ button img {
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
-  .menu i,
-  .checkbox {
-    display: inline-block;
+  header {
+    padding: 50px;
   }
-  .menu {
+
+  #icon,
+  .menu__list h4,
+  .menu__list i {
+    display: block;
+  }
+
+  #icon {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    align-items: center;
+  }
+
+  .menu__list {
     position: fixed;
+    top: 100px;
     left: -250px;
     width: 250px;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     transition: all 0.5s ease;
   }
 
-  .menu ul {
-    display: flex;
-    flex-direction: column;
-    padding-top: 0;
-  }
-
-  .menu h4 {
-    display: block;
+  .menu__list h4 {
     font-size: 22px;
     color: #fff;
     text-align: center;
@@ -529,8 +538,16 @@ button img {
     user-select: none;
   }
 
-  .menu ul a {
-    display: block;
+  .menu__list ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 10px;
+  }
+
+  .menu__list ul a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 100%;
     width: 100%;
     line-height: 65px;
@@ -538,56 +555,30 @@ button img {
     color: #fec89a;
     padding-left: 40px;
     box-sizing: border-box;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid #000;
     transition: 0.4s;
   }
 
-  .menu ul li:active a {
+  .menu__list ul li:active a {
     padding-left: 50px;
   }
 
-  .menu ul li i {
+  .menu__list ul li i {
     margin-right: 16px;
   }
 
-  .menu #check {
-    display: none;
-  }
-
-  .menu label #btn,
-  .menu label #cancel {
-    position: absolute;
-    cursor: pointer;
-    background-color: #000;
-    border-radius: 3px;
-  }
-
-  .menu label #btn {
+  #icon {
     left: 40px;
     top: 25px;
     font-size: 35px;
     color: #fff;
-    padding: 6px, 12px;
+    padding: 6px 12px;
+    transition: all 0.5s;
   }
 
-  .menu label #cancel {
-    z-index: 1111;
-    left: 195px;
-    top: 17px;
-    font-size: 30px;
-    color: #0a5275;
-    padding: 4px 9px;
-  }
-
-  #check:checked ~ .menu {
+  #check:checked ~ .menu__list {
     left: 0;
-  }
-
-  #check:checked ~ label #btn {
-    left: 250px;
-    opacity: 0;
-    pointer-events: none;
   }
 
   h2 {
