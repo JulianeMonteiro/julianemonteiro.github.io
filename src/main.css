@@ -34,6 +34,11 @@ header {
   font-family: "Quicksand", sans-serif;
 }
 
+.menu .checkbox,
+.menu i {
+  display: none;
+}
+
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -42,7 +47,7 @@ nav ul {
 
 nav li a {
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 nav li a:hover {
@@ -193,6 +198,11 @@ h2 {
   width: 0;
 }
 
+.works li:hover {
+  transition: all ease-in-out 0.5s;
+  transform: scale(1.15);
+}
+
 article {
   width: var(--card-size, 300px);
   aspect-ratio: 3 / 4;
@@ -339,8 +349,8 @@ button img {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   h2 {
-    font-size: 5em;
-    padding: 300px 50px;
+    font-size: 4.5em;
+    padding: 230px 50px;
   }
   #img-screen {
     background-position: top right;
@@ -383,12 +393,16 @@ button img {
 }
 
 @media screen and (min-width: 635px) and (max-width: 767px) {
+  nav li a {
+    font-size: 1em;
+  }
+
   .role {
     height: 80vh;
   }
 
   h2 {
-    font-size: 3em;
+    font-size: 3.5em;
     padding-top: 200px;
     height: 80vh;
   }
@@ -423,6 +437,14 @@ button img {
 }
 
 @media screen and (min-width: 480px) and (max-width: 634px) {
+  nav li a {
+    font-size: 1em;
+  }
+
+  nav ul {
+    justify-content: space-between;
+  }
+
   h2 {
     font-size: 3em;
     padding: 200px 50px;
@@ -478,6 +500,96 @@ button img {
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
+  .menu i,
+  .checkbox {
+    display: inline-block;
+  }
+  .menu {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all 0.5s ease;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .menu h4 {
+    display: block;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    line-height: 70px;
+    background-color: #161616;
+    user-select: none;
+  }
+
+  .menu ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: #fec89a;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid #000;
+    transition: 0.4s;
+  }
+
+  .menu ul li:active a {
+    padding-left: 50px;
+  }
+
+  .menu ul li i {
+    margin-right: 16px;
+  }
+
+  .menu #check {
+    display: none;
+  }
+
+  .menu label #btn,
+  .menu label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background-color: #000;
+    border-radius: 3px;
+  }
+
+  .menu label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: #fff;
+    padding: 6px, 12px;
+  }
+
+  .menu label #cancel {
+    z-index: 1111;
+    left: 195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+  }
+
+  #check:checked ~ .menu {
+    left: 0;
+  }
+
+  #check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
   h2 {
     font-size: 2.7em;
     padding: 190px 50px;

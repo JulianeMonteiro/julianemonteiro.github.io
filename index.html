@@ -5,33 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Juliane Monteiro</title>
-    <link rel="shortcut icon" href="/src/images/icons/" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="/src/images/icons/favicon.ico"
+      type="image/x-icon"
+    />
+
     <link rel="stylesheet" href="/src/main.css" />
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container menu">
         <nav>
+          <input type="checkbox" id="check " class="checkbox" />
+          <label for="check">
+            <i class="fas fa-times" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+          </label>
+          <h4>Menu</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <div class="menu__item">
+              <li>
+                <a href="#"> <i class="fas fa-stream"></i> Home</a>
+              </li>
+            </div>
+            <div class="menu__item">
+              <li>
+                <a href="#about"
+                  ><i class="fa-sharp fa-regular fa-user"></i> About</a
+                >
+              </li>
+            </div>
+            <div class="menu__item">
+              <li>
+                <a href="#skills"
+                  ><i class="fa-sharp fa-regular fa-star"></i> Skills</a
+                >
+              </li>
+            </div>
+            <div class="menu__item">
+              <li>
+                <a href="#works"
+                  ><i class="fa-sharp fa-regular fa-folder"></i> Works</a
+                >
+              </li>
+            </div>
+            <div class="menu__item">
+              <li>
+                <a href="#contact"
+                  ><i class="fa-sharp fa-regular fa-envelope"></i>Contact</a
+                >
+              </li>
+            </div>
           </ul>
         </nav>
       </div>
     </header>
+
     <section class="role">
       <div class="title" id="img-screen">
         <div class="header">
-          <h2>I'm a <span class="animate"></span></h2>
+          <h2>
+            I'm a <br />
+            <span class="animate"></span>
+          </h2>
         </div>
-        <script
-          src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
-          integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
-          crossorigin="anonymous"
-        ></script>
       </div>
     </section>
 
@@ -205,6 +243,10 @@
         </div>
       </div>
     </section>
+    <script
+      src="https://kit.fontawesome.com/b83f94fed7.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="/main.js"></script>
   </body>
 </html>
