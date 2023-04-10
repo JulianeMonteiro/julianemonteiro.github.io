@@ -1,0 +1,33 @@
+/* SECTION HEADER*/
+
+header {
+  background-color: #161616;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  font-family: "Quicksand", sans-serif;
+}
+
+input,
+#icon,
+.menu__list h4,
+.menu__list i {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+
+  li a {
+    color: #fff;
+    font-size: 1.1em;
+
+    &:hover {
+      color: variables.$principalColor;
+    }
+  }
+}
