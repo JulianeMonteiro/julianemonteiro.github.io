@@ -3,7 +3,7 @@
 .about {
   margin: 0px auto;
   padding: 100px 0;
-  background-color: variables.$secondaryColor;
+  background-color: $secondaryColor;
 }
 
 .photo {
@@ -16,11 +16,11 @@
   display: grid;
   grid-template-columns: repeat(2, 45%);
   column-gap: 10%;
-  color: #f8f6f5;
+  color: $whiteColor;
   font-size: 1.4rem;
 
   h3 {
-    color: #f7c9b6;
+    color: $primaryColor;
     font-size: 2em;
     letter-spacing: 0.1em;
     margin-bottom: 50px;
@@ -28,6 +28,6 @@
   p {
     text-align: justify;
     line-height: 1.3em;
-    font-family: "Quicksand", sans-serif;
+    font-family: $principalFont;
   }
 }

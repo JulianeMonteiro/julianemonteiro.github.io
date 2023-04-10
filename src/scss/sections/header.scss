@@ -1,13 +1,13 @@
 /* SECTION HEADER*/
 
 header {
-  background-color: #161616;
+  background-color: $bgColorHeader;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 3;
-  font-family: "Quicksand", sans-serif;
+  font-family: $principalFont;
 }
 
 input,
@@ -23,11 +23,11 @@ nav ul {
   padding: 20px;
 
   li a {
-    color: #fff;
+    color: $whiteColor;
     font-size: 1.1em;
 
     &:hover {
-      color: variables.$principalColor;
+      color: $primaryColor;
     }
   }
 }
