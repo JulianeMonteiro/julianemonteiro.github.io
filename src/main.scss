@@ -11,7 +11,7 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1260px) {
   .role h2 {
-    padding-top: 62px;
+    padding: 350px 30px 0 30px;
     font-size: 4.5em;
   }
 
@@ -32,7 +32,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .role h2 {
-    padding-top: 62px;
+    padding: 310px 30px 0 30px;
   }
 
   #img-screen {
@@ -90,8 +90,9 @@
   .role h2 {
     font-size: 4em;
     height: 80vh;
-    padding-top: 62px;
+    padding: 320px 30px 0 30px;
   }
+
   #img-screen {
     background-position: top right;
   }
@@ -143,7 +144,7 @@
   .role h2 {
     font-size: 3em;
     height: 80vh;
-    padding-top: 63px;
+    padding: 340px 30px 0 30px;
   }
 
   .my-skills img {
@@ -259,7 +260,7 @@
   .role h2 {
     font-size: 2.7em;
     height: 70vh;
-    padding-top: 100px;
+    padding: 220px 30px 0 30px;
   }
 
   #img-screen {
