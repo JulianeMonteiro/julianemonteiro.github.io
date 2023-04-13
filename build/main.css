@@ -105,30 +105,32 @@ nav ul li a:hover {
   font-family: "Quicksand", sans-serif;
 }
 
-.role {
-  height: 95vh;
-}
-.role #img-screen {
+#img-screen {
   background-image: url("/src/images/bg/a.jpg");
   background-size: cover;
   background-attachment: fixed;
   box-shadow: inset 0 -3px 30px 0 #222;
 }
+
 .role h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   text-transform: uppercase;
   height: 95vh;
   letter-spacing: 2px;
-  padding: 350px 30px 0 30px;
+  padding: 62px 30px 0 30px;
   font-size: 5em;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.4);
   text-shadow: 1px 2px #fff;
 }
-.role .animate {
+
+.animate {
   color: #fec89a;
   font-size: 1em;
-  letter-spacing: 2px;
 }
 
 /* SECTION SKILLS*/
@@ -313,7 +315,7 @@ article {
 
 @media screen and (min-width: 1024px) and (max-width: 1260px) {
   .role h2 {
-    padding: 350px 30px 0 30px;
+    padding-top: 62px;
     font-size: 4.5em;
   }
   .grid h3 {
@@ -328,7 +330,7 @@ article {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .role h2 {
-    padding: 310px 30px 0 30px;
+    padding-top: 62px;
   }
   #img-screen {
     background-position: top right;
@@ -374,7 +376,7 @@ article {
   .role h2 {
     font-size: 4em;
     height: 80vh;
-    padding: 320px 30px 0 30px;
+    padding-top: 62px;
   }
   #img-screen {
     background-position: top right;
@@ -417,7 +419,7 @@ article {
   .role h2 {
     font-size: 3em;
     height: 80vh;
-    padding: 340px 30px 0 30px;
+    padding-top: 63px;
   }
   .my-skills img {
     width: 65px;
@@ -516,7 +518,7 @@ article {
   .role h2 {
     font-size: 2.7em;
     height: 70vh;
-    padding: 220px 30px 0 30px;
+    padding-top: 100px;
   }
   #img-screen {
     background-position: top right;
